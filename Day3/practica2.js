@@ -81,6 +81,77 @@ let circunferenciaCirculo = Math.round((2 * pi * radio) * 100) / 100
 
 alert(`El area del circulo es: ${areaCirculo}, la circunferencia: ${circunferenciaCirculo}.`)
 
+// 5 ?
+
+const x1 = 2
+const x2 = 6
+const y1 = 2
+const y2 = 10
+let m = ((x1,y1)/(x2,y2)) * 10
+console.log(m)
+
+// 7?
+
+let x = -3
+console.log(x**2 + (6*x) + 9) // 0
+
+
+let horasLaborales = prompt("Introduzca sus horas laboradas: ")
+let pagoHoras = prompt("Introduzca la tarifa por hora:")
+
+alert(`Su ganancia semanal es de ${horasLaborales * pagoHoras}`)
+
+
+let nombre = "Jean"
+
+nombre.length > 7
+? console.log("Su nombre es largo") : console.log("Su nombre es corto")
+
+
+let firstName = "Jean"
+let lastName = "Gómez"
+
+firstName.length > lastName.length
+? console.log(`Tu primer nombre, ${firstName}, es mas largo que tu apellido, ${lastName}.`)
+: console.log(`Tu primer nombre, ${firstName}, es mas corto que tu apellido, ${lastName}.`)
+
+
+let myAge = 250;
+let yourAge = 25;
+let menor = Math.abs(myAge - yourAge)
+
+myAge > yourAge
+? console.log(`Soy ${myAge - yourAge} años mayor que tú.`)
+: console.log(`Soy ${menor} años menor que tú.`)
+
+
+let edad = prompt("Introduce tú edad para comprobar si puedes conducir:")  
+
+edad >= 18
+? console.log(`Tienes ${edad} años. Tienes la edad suficiente para conducir.`)
+: console.log(`Tienes ${edad} años. Podrás conducir después de ${18 - edad} años.`)
+
+
+const tuEdad = parseInt(prompt("Introduzca su edad:"))
+const segundosPorAño = 365 * 24 * 60 * 60;
+ 
+alert(`Usted ha vivido ${tuEdad * segundosPorAño} segundos`)
+
+
+let date = new Date()
+
+let año = date.getFullYear()
+let mes = date.getMonth()
+let dia = date.getDate()
+let hora = date.getHours()
+let minuto = date.getMinutes()
+
+console.log(`${año}-${mes}-${dia} ${hora}:${minuto}`)
+console.log(`${dia}-${mes}-${año} ${hora}:${minuto}`)
+console.log(`${dia}/${mes}/${año} ${hora}:${minuto}`)
+
+
+
 
 
 
