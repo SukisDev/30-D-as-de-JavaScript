@@ -222,7 +222,7 @@ console.log(numerosList.slice(1, numerosList.length - 1))// [2, 3, 4]
  
 //const nums = [1, 2, 3, 4, 5];
 console.log(nums.splice()); // Elimina todo
-console.log(nums.splice(1, 3)) // [2, 3, 4]Elimina el primer indice y de ja la cantidad de elementos que se colocan en el segundo paramentro
+console.log(nums.splice(1, 3)) // [2, 3, 4]Elimina el primer indice y deja la cantidad de elementos que se colocan en el segundo paramentro
 
 // agregar elementos utilizando push() al final
 
