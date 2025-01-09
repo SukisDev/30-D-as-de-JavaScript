@@ -120,3 +120,35 @@ for(let i = 0; i <= 100; i++){
 console.log(`La suma de todos los pares de 0 a 100 es ${sumPar}. Y la suma de todos los impares de 0 a 100 es ${sumImpar}`)
 console.log([sumPar, sumImpar])
 
+
+const matriz = []
+
+for (let i = 0; i < 5; i++){
+    let numRandom = Math.floor(Math.random() * 11)
+    if(matriz.includes(numRandom) == false){
+        matriz.push(numRandom)
+    }
+}
+console.log(matriz)
+
+// const matriz = []
+while(true){
+        let numRandom = Math.floor(Math.random() * 11)
+        if(matriz.indexOf(numRandom) == -1){
+            matriz.push(numRandom)
+        }
+        if(matriz.length == 5){
+          break
+        }
+}
+console.log(matriz)     
+
+
+const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+let resultado = ""
+
+for(let i = 0; i < 5; i++){
+    let randomChar = Math.floor(Math.random() * caracteres.length);
+    resultado += caracteres.charAt(randomChar)
+}
+console.log(resultado)
