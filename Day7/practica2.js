@@ -49,3 +49,59 @@ function addItem(item){
   return items
 }
 console.log(addItem("Controller"))
+
+
+const charArr = [1, 2, 3, 4, 5, 6];
+function removeItem(index){
+    charArr.splice(index, 1);
+    console.log(charArr)
+}
+removeItem(2)
+
+function sumOfNumbers(num){
+    let sum = 0;
+    for(let i = 0; i <= num; i++){
+        sum += i
+    }
+    console.log(sum)
+}
+sumOfNumbers(5)
+
+function sumOfOdds(num){
+    let sum = 0;
+    for(let i = 0; i <= num; i++){
+        if(i % 2 != 0){
+            sum += i
+        }
+    }
+    return sum
+}
+console.log(sumOfOdds(7))
+
+function sumOfEven(num){
+    let sum = 0;
+    for(let i = 0; i <= num; i++){
+        if(i % 2 == 0){
+            sum += i
+        }
+    }
+    return sum
+}
+console.log(sumOfEven(10))
+
+function evensAndOdds(num){
+    if(num >= 0){
+     let sumPar = 0
+     let sumImpar = 0
+       for(let i = 0; i <= num; i++){
+         if(i % 2 == 0){
+            sumPar++;
+         }else if(i % 2 != 0){
+           sumImpar++;
+         }
+       }
+       console.log(`El número de impares son ${sumImpar}.`);
+       console.log(`El número de pares son ${sumPar}.`)
+    }
+ }
+ evensAndOdds(100)
